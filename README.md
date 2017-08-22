@@ -1,5 +1,5 @@
 # koa-apollo-websocket-server-starter
-Koa + Apollo Server + Websocket support starter package
+Koa + Apollo Server (GraphQL) + Websocket support starter package
 
 This is a ready to roll starter with [Koa](http://koajs.com/), [Apollo Server](https://github.com/apollographql/apollo-server) and [koa-websocket](https://github.com/kudos/koa-websocket).
 It also has reload after changes support and testing via [jest](https://facebook.github.io/jest/.).
