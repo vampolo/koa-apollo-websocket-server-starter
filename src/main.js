@@ -11,15 +11,15 @@ const http = new Router();
 const ws = new Router();
 const PORT = 3000;
 
-http.get('/', function(ctx, next) {
+http.get('/', async function(ctx, next) {
   ctx.status = 200;
   ctx.body = 'Hello!';
 });
 
-ws.all('/ws', function(ctx, next) {
+ws.all('/ws', async function(ctx, next) {
   console.log('connected websocket');
   ctx.websocket.send('Hey');
-  ctx.websocket.on('message',  function(message) {
+  ctx.websocket.on('message', async function(message) {
     console.log(message);
     ctx.websocket.send(message);
     });
